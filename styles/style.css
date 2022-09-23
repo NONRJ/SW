@@ -1,0 +1,217 @@
+* {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul ,ol {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+ul, ol {
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: #FFF;
+    font-style:inherit;
+}
+
+body {
+    overflow:hidden;
+    margin: 0;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.4;
+    color: #FFF;
+}
+
+.hero {
+    background-color: #1a1a1a;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.container {
+    max-width: 1276px;  
+    margin: 0 auto;
+    padding: 0 16px; 
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.header__logo {
+    line-height: 0;
+}
+
+.header__list {
+    display: flex;
+}
+
+.header__item {
+    margin-right: 50px;
+}
+
+.header__item:nth-last-child(1) {
+    margin-right: 0;
+}
+
+.header__link:hover {
+    color: rgb(251, 255, 14);
+    text-shadow: 0px 0px 20px rgb(251, 255, 14);
+}
+
+.header__contacts-span {
+    color: red;
+}
+
+.main {
+    background-image: url("/img/1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.show {
+    min-height: calc(100vh - 68px);
+    background-color: #1a1a1a;
+    opacity: .7;
+}
+.show__wrapper {
+    display: flex;
+    margin-bottom: 35px;
+}
+
+.show__row:last-child {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    gap: 43px;
+}
+
+.show__col {
+    flex: 1;
+    padding: 15px;
+    min-height: 100px;
+}
+
+.show__card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    border: 1px solid;
+    width: 250px;
+    cursor: pointer;
+}
+
+.viewed {
+    color: rgb(251, 255, 14);
+}
+
+.show__card:hover {
+    border-color: rgb(251, 255, 14);
+    box-shadow: 0px 0px 20px rgb(251, 255, 14);
+}
+
+.show__card:last-child {
+    margin: 0 auto;
+}
+ 
+.show__desc {
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+.show__btn {
+    padding: 15px;
+}
+.show__btn-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+  
+.show__btn:hover {
+    cursor: pointer;
+    color: rgb(251, 255, 14);
+    transform: skew(-10deg);
+    text-shadow: 0px 0px 20px rgb(251, 255, 14);
+}
+  
+.show__btn-left:hover {
+    transform: skew(10deg);
+}
+
+.disable:hover {
+    transform: none;
+    text-shadow: none;
+    color: red;
+    cursor: none;
+}
+  
+.count__elem {
+    font-size: 20px;
+    color:rgb(251, 255, 14);
+}
+
+.modal {
+    height: 100vh;
+    width: 100vw;
+    padding: 68px 15px;
+    background-color: #1a1a1a;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(300%, -50%);
+    transition: transform 0.1s linear;
+    
+}
+.modal__row{
+    --webkit-user-select: none;
+    user-select: none;
+    padding: 25px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+  
+.modal__info {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.modal__name {
+    text-align: center;
+    text-transform: uppercase;
+    width: 300px;
+}
+  
+.modal__info-films {
+    padding-left: 40px;
+}
+.modal__btn {
+    padding: 15px;
+    width: 70px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.modal__btn:hover {
+    cursor: pointer;
+    color: rgb(251, 255, 14);
+    transform: skew(10deg);
+    text-shadow: 0px 0px 20px rgb(251, 255, 14);
+}
+
+.modal__btn span {
+    font-size: 20px;
+}
+  
